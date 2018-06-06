@@ -1,0 +1,80 @@
+
+
+Number of threads: 1
+Picture size: 640*480
+Filter size: 25
+realTime : 6.157974
+userTime : 0.000613
+procTime : 0.000003
+
+
+Number of threads: 2
+Picture size: 640*480
+Filter size: 25
+realTime : 6.170389
+userTime : 0.000616
+procTime : 0.000000
+
+
+Number of threads: 4
+Picture size: 640*480
+Filter size: 25
+realTime : 6.166400
+userTime : 0.000615
+procTime : 0.000001
+
+
+Number of threads: 8
+Picture size: 640*480
+Filter size: 25
+realTime : 6.167176
+userTime : 0.000615
+procTime : 0.000001
+
+
+Number of threads: 100
+Picture size: 640*480
+Filter size: 25
+realTime : 6.189320
+userTime : 0.000617
+procTime : 0.000002
+
+
+Number of threads: 1
+Picture size: 640*480
+Filter size: 50
+realTime : 24.366694
+userTime : 0.002434
+procTime : 0.000003
+
+
+Number of threads: 2
+Picture size: 640*480
+Filter size: 50
+realTime : 24.533151
+userTime : 0.002445
+procTime : 0.000008
+
+
+Number of threads: 4
+Picture size: 640*480
+Filter size: 50
+realTime : 24.438159
+userTime : 0.002438
+procTime : 0.000006
+
+
+Number of threads: 8
+Picture size: 640*480
+Filter size: 50
+realTime : 24.466079
+userTime : 0.002441
+procTime : 0.000006
+
+
+Number of threads: 100
+Picture size: 640*480
+Filter size: 50
+realTime : 24.543825
+userTime : 0.002445
+procTime : 0.000009

@@ -1,0 +1,99 @@
+
+
+Creating Array with arraySize : 10000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000129
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.020858
+userTime : 0.000002
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.007527
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000044
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.003647
+userTime : 0.000001
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.003665
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 1000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000146
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.003568
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.001490
+userTime : 0.000001
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000071
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.006839
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.003825
+userTime : 0.000001
+procTime : 0.000000
+
+
+Creating Array with arraySize : 100, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000063
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.000338
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000090
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000051
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.004287
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.006246
+userTime : 0.000000
+procTime : 0.000000

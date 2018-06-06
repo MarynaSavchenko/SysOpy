@@ -1,0 +1,408 @@
+
+
+DYNAMIC:
+
+
+
+Creating Array with arraySize : 100000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000063
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.190851
+userTime : 0.000018
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.047986
+userTime : 0.000005
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000044
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001654
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001661
+userTime : 0.000001
+procTime : 0.000000
+
+
+Creating Array with arraySize : 10000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000056
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.019077
+userTime : 0.000002
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.004811
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000035
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001636
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001683
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 1000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000040
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.001894
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000480
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000030
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001649
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001736
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 100, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000054
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.000369
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000063
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000040
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.002571
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.002180
+userTime : 0.000000
+procTime : 0.000000
+
+
+STATIC:
+
+
+
+Creating Array with arraySize : 100000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000042
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.193423
+userTime : 0.000018
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.076966
+userTime : 0.000008
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000019
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001664
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001669
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 10000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000037
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.019336
+userTime : 0.000002
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.007912
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000030
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001724
+userTime : 0.000001
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001716
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 1000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000054
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.003318
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.001345
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000032
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.002338
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.002296
+userTime : 0.000001
+procTime : 0.000000
+
+
+Creating Array with arraySize : 100, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000074
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.000238
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000096
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000040
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001583
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001647
+userTime : 0.000000
+procTime : 0.000000
+
+
+SHARED:
+
+
+
+Creating Array with arraySize : 100000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000042
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.188123
+userTime : 0.000018
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.047665
+userTime : 0.000005
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000036
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001642
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001671
+userTime : 0.000001
+procTime : 0.000000
+
+
+Creating Array with arraySize : 10000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000039
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.018853
+userTime : 0.000001
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.004798
+userTime : 0.000001
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000038
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001664
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001662
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 1000, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000036
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.001863
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000479
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000029
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.001679
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.001643
+userTime : 0.000000
+procTime : 0.000000
+
+
+Creating Array with arraySize : 100, blockSize : 50, isStatic: 1
+
+Time for creating Array:
+realTime : 0.000086
+userTime : 0.000000
+procTime : 0.000000
+
+Time for initialisation Array:
+realTime : 0.000615
+userTime : 0.000000
+procTime : 0.000000
+
+Time for searching element in Array:
+realTime : 0.000164
+userTime : 0.000000
+procTime : 0.000000
+
+Time for deleting some blocks  in Array:
+realTime : 0.000137
+userTime : 0.000000
+procTime : 0.000000
+
+Time for adding some blocks in Array:
+realTime : 0.004582
+userTime : 0.000000
+procTime : 0.000000
+
+Time for for deleting and adding some blocks in Array:
+realTime : 0.004534
+userTime : 0.000000
+procTime : 0.000000

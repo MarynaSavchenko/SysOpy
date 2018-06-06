@@ -1,0 +1,128 @@
+
+
+Coping file in: lib4 with recordSize: 4 , recordAmount: 1500 , mode: library 
+
+Time for coping file in library mode:
+realTime : 0.002067
+userTime : 0.000000
+procTime : 0.000000
+
+
+Coping file in: sys4 with recordSize: 4 , recordAmount: 1500 , mode: system 
+
+Time for coping file in system mode:
+realTime : 0.012193
+userTime : 0.000000
+procTime : 0.000001
+
+
+Sorting file with recordSize: 4 , recordAmount: 1500 , mode: library 
+
+Time for sorting file in library mode:
+realTime : 11.351002
+userTime : 0.000267
+procTime : 0.000868
+
+
+Sorting file with recordSize: 4 , recordAmount: 1500 , mode: system 
+
+Time for sorting file in system mode:
+realTime : 8.126840
+userTime : 0.000155
+procTime : 0.000657
+
+
+Coping file in: lib512 with recordSize: 512 , recordAmount: 1500 , mode: library 
+
+Time for coping file in library mode:
+realTime : 0.005707
+userTime : 0.000000
+procTime : 0.000000
+
+
+Coping file in: sys512 with recordSize: 512 , recordAmount: 1500 , mode: system 
+
+Time for coping file in system mode:
+realTime : 0.015018
+userTime : 0.000000
+procTime : 0.000001
+
+
+Sorting file with recordSize: 512 , recordAmount: 1500 , mode: library 
+
+Time for sorting file in library mode:
+realTime : 13.447825
+userTime : 0.000325
+procTime : 0.001019
+
+
+Sorting file with recordSize: 512 , recordAmount: 1500 , mode: system 
+
+Time for sorting file in system mode:
+realTime : 8.420511
+userTime : 0.000147
+procTime : 0.000694
+
+
+Coping file in: lib4096 with recordSize: 4096 , recordAmount: 1000 , mode: library 
+
+Time for coping file in library mode:
+realTime : 0.021662
+userTime : 0.000000
+procTime : 0.000002
+
+
+Coping file in: sys4096 with recordSize: 4096 , recordAmount: 1000 , mode: system 
+
+Time for coping file in system mode:
+realTime : 0.028848
+userTime : 0.000000
+procTime : 0.000002
+
+
+Sorting file with recordSize: 4096 , recordAmount: 1000 , mode: library 
+
+Time for sorting file in library mode:
+realTime : 10.415913
+userTime : 0.000219
+procTime : 0.000822
+
+
+Sorting file with recordSize: 4096 , recordAmount: 1000 , mode: system 
+
+Time for sorting file in system mode:
+realTime : 5.108179
+userTime : 0.000074
+procTime : 0.000436
+
+
+Coping file in: lib8192 with recordSize: 8192 , recordAmount: 1000 , mode: library 
+
+Time for coping file in library mode:
+realTime : 0.040438
+userTime : 0.000000
+procTime : 0.000003
+
+
+Coping file in: sys8192 with recordSize: 8192 , recordAmount: 1000 , mode: system 
+
+Time for coping file in system mode:
+realTime : 0.032581
+userTime : 0.000000
+procTime : 0.000003
+
+
+Sorting file with recordSize: 8192 , recordAmount: 1000 , mode: library 
+
+Time for sorting file in library mode:
+realTime : 12.301348
+userTime : 0.000226
+procTime : 0.001003
+
+
+Sorting file with recordSize: 8192 , recordAmount: 1000 , mode: system 
+
+Time for sorting file in system mode:
+realTime : 6.458984
+userTime : 0.000067
+procTime : 0.000578
