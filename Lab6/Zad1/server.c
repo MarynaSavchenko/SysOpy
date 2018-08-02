@@ -59,7 +59,7 @@ void registr(struct msg* buf){
 		clientAmount++;
 		sprintf(buf->count, "%d", clientAmount - 1);
 	}
-	
+
 	if (msgsnd(clientID, buf, MSG_SIZE,0) == -1) ERROR("Error while sending clientID to client\n");
 }
 
@@ -69,6 +69,7 @@ void time(struct msg* buf){
 	if (clientID == -1 ) {printf("There is no such client \n");return;}
 	buf->mtype = TIME_MSG;
 	buf->senderPID = getpid();
+	
 	FILE* date = popen("date", "r");
 	if (date < 0) ERROR("Error while getting date\n");
 	fgets(buf->count,MAX_COUNT ,date);
@@ -82,17 +83,17 @@ void mirror(struct msg* buf){
 	if (clientID == -1 ) {printf("There is no such client \n");return;}
 	buf->mtype = MIRROR_MSG;
 	buf->senderPID = getpid();
-	
+
 	int bufLen = strlen(buf->count);
 	if (buf->count[bufLen - 1] == '\n') bufLen--;
-	
+
 	for (int i = 0; i < bufLen/2; i++){
 		char c = buf -> count[i];
 		buf->count[i]= buf-> count[bufLen - i - 1];
 		buf->count[bufLen - i - 1] = c;
 	}
 
-	if (msgsnd(clientID, buf, MSG_SIZE, 0) == -1) ERROR("Error while mirroring \n"); 
+	if (msgsnd(clientID, buf, MSG_SIZE, 0) == -1) ERROR("Error while mirroring \n");
 }
 
 
@@ -102,7 +103,7 @@ void calc(struct msg* buf){
 	if (clientID == -1 ) {printf("There is no such client \n");return;}
 	buf->mtype = CALC_MSG;
 	buf->senderPID = getpid();
-	
+
 	char tmp[100];
 	sprintf(tmp, "echo '%s' | bc", buf->count);
 	FILE* calc = popen(tmp, "r");
@@ -126,7 +127,7 @@ void stoped(struct msg* buf){
 			break;
 	}	}
 }
-	
+
 
 
 int main(){
@@ -150,9 +151,9 @@ int main(){
 		if (state == 0){
 			if(msgctl(serverID,IPC_STAT, &check) == -1)ERROR("Error while checking state of queue\n");
 			if(check.msg_qnum==0) break;
-		} 
+		}
 		if (msgrcv(serverID, &buf, MSG_SIZE,0,0) == -1) ERROR("Error while server receiving a comm \n");
-	
+
 	switch(buf.mtype){
 		case REG_MSG:
 			registr(&buf);
@@ -179,5 +180,3 @@ int main(){
 	}
 	return 0;
 }
-
-

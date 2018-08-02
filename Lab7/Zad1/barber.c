@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/shm.h>
-#include <sys/types.h> 
-#include <sys/ipc.h> 
-#include <sys/sem.h> 
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
 #include <signal.h>
 #include "barberShop.h"
 
@@ -21,7 +21,7 @@ void finishWork(){
 
 	if (shmctl(SHMID,IPC_RMID,0) == -1) {ERROR("Error while deleting shm fifo\n");}
 	else {printf("Shm fifo deleted\n");}
-	
+
 	if (semctl(SID,0,IPC_RMID) == -1) {ERROR("Error while deleting semaphores\n");}
 	else {printf("Semaphores deleted\n");}
 
@@ -33,7 +33,7 @@ void cut(pid_t client){
 	printf("Barber starts cut %d, TIME: %ld \n", client, Time());
 	kill(client, SIGRTMAX);
 	printf("Barber finishes cut %d, TIME: %ld \n", client, Time());
-	
+
 
 }
 
@@ -60,7 +60,7 @@ void initBarber(){
 
 		}
 	}
-	
+
 
 }
 
@@ -75,7 +75,7 @@ void makeFifo(int max){
 
 	SHMID = shmget(key, sizeof(Fifo), IPC_PRIVATE | 0666);
 	if (SHMID == -1) ERROR("Error while creating shm\n");
-	
+
 	void *shmatCheck = shmat(SHMID, NULL, 0);
 	if (shmatCheck == (void*) (-1)) ERROR("Error while shm getting adress\n");
 	fifo = (Fifo*) shmatCheck;
@@ -86,16 +86,17 @@ void makeFifo(int max){
 
 void makeSemaphores(){
 
-	SID = semget(key,2,IPC_PRIVATE  | 0666);
+	SID = semget(key,2,IPC_CREAT | IPC_EXCL | S_IRUSR |
+        S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH));
 	if (SID == -1) ERROR("Error while creating semaphors\n");
 	if (semctl(SID, 0, SETVAL,0) == -1) ERROR("Error while setting value to BARBER");
 	if (semctl(SID, 1, SETVAL, 1) == -1) ERROR("Error while setting value to CHECK");
-	
+
 
 
 }
 void intHandler(int signo){
-	
+
 	exit(1);
 
 }

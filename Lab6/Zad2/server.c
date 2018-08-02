@@ -34,7 +34,7 @@ void deleteQueue(){
 	for(int i = 0; i < clientAmount;i++){
 			if (mq_close(clients[i][1]) == -1) ERROR("Error while closing queue\n");
 			if (kill(clients[i][0],SIGINT) == -1) ERROR("Error while sending SIGINT to client\n");
-			
+
 	}
 
 	if (serverID>-1){
@@ -69,8 +69,8 @@ void registr(struct msg* buf){
 		sprintf(buf->count, "%d", clientAmount - 1);
 		if (mq_send(clientID, (char*) buf, MSG_SIZE,0) == -1) ERROR("Error while sending clientID to client\n");
 	}
-	
-	
+
+
 }
 
 void time(struct msg* buf){
@@ -92,17 +92,17 @@ void mirror(struct msg* buf){
 	if (clientID == -1 ) {printf("There is no such client \n");return;}
 	buf->mtype = MIRROR_MSG;
 	buf->senderPID = getpid();
-	
+
 	int bufLen = strlen(buf->count);
 	if (buf->count[bufLen - 1] == '\n') bufLen--;
-	
+
 	for (int i = 0; i < bufLen/2; i++){
 		char c = buf -> count[i];
 		buf->count[i]= buf-> count[bufLen - i - 1];
 		buf->count[bufLen - i - 1] = c;
 	}
 
-	if (mq_send(clientID, (char*)buf, MSG_SIZE, 0) == -1) ERROR("Error while mirroring \n"); 
+	if (mq_send(clientID, (char*)buf, MSG_SIZE, 0) == -1) ERROR("Error while mirroring \n");
 }
 
 
@@ -112,7 +112,7 @@ void calc(struct msg* buf){
 	if (clientID == -1 ) {printf("There is no such client \n");return;}
 	buf->mtype = CALC_MSG;
 	buf->senderPID = getpid();
-	
+
 	char tmp[100];
 	sprintf(tmp, "echo '%s' | bc", buf->count);
 	FILE* calc = popen(tmp, "r");
@@ -138,7 +138,7 @@ void stoped(struct msg* buf){
 			break;
 	}	}
 }
-	
+
 
 
 int main(){
@@ -148,9 +148,9 @@ int main(){
 
 	struct mq_attr attr;
 	attr.mq_maxmsg = MAX_MSG_SIZE;
-        attr.mq_msgsize = MSG_SIZE;
+  attr.mq_msgsize = MSG_SIZE;
 
-	
+
 
 	serverID = mq_open(serverPath,O_CREAT|O_EXCL,0666,&attr);
 	if (serverID == -1) {ERROR("Error while creating serwer queque\n");}
@@ -162,9 +162,9 @@ int main(){
 		if (state == 0){
 			if(mq_getattr(serverID,&check) == -1)ERROR("Error while checking state of queue\n");
 			if(check.mq_curmsgs == 0) break;
-		} 
+		}
 		if (mq_receive(serverID, (char*) &buf, MSG_SIZE,NULL) == -1) ERROR("Error while server receiving a comm \n");
-	
+
 	switch(buf.mtype){
 		case REG_MSG:
 			registr(&buf);
@@ -191,5 +191,3 @@ int main(){
 	}
 	return 0;
 }
-
-
